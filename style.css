@@ -1,0 +1,21 @@
+body {
+    margin: auto;
+    width: 60%;
+    font-family:
+        Arial,
+        Trebuchet Ms,
+        sans-serif;
+    line-height: 1.5;
+    color: #e2ffff;
+    background: url("visuals/gofish_pic1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome { /*yleinen flexbox, nätisti elementit pystyakseliin*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41rem;
+    text-align: center;
+} /*sisäset marginit flexboxin elementeis vähän eh fixaa*/
