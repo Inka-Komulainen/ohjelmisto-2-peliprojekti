@@ -16,6 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 41rem;
+    padding-top: 38rem;
     text-align: center;
 } /*sisäset marginit flexboxin elementeis vähän eh fixaa*/
