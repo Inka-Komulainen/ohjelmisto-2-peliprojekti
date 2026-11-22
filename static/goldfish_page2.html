@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO FISH GAME</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<div class="top">
+   <!-- Logo in the middle of the page -->
+<div class="logo">
+    <img src="logo.png" alt="My Logo">
+</div>
+   <!-- Navigation Bar with functions -->
+<nav>
+        <a id="start">Start</a>
+        <a href="gofish_page3.html">Tools</a>
+        <a href="gofish_page4.html">Fish</a>
+        <a href="gofish_page5.html">About</a>
+</nav>
+</div>
+</header>
+
+<section>
+    <!--points,level & timer -->
+<div class="middle">
+    <button type="button" id="pause_button">PAUSE</button>
+    <p>TargetPoints: <strong id="target">0</strong></p>
+    <p>Points: <strong id="score">0</strong></p>
+    <p>Level: <strong id="level">0</strong></p>
+    <div id="hook" class="triangle-down"></div>
+    <button id="start">Start rotation</button>
+    <p>Timer: <strong id="timer">00:00</strong></p>
+</div>
+</section>
+
+<section>
+    <!-- gamescreen with fish -->
+<div class="gamescreen">
+   <img src="fish-small.png" class="small-fish" alt="Small fish">
+   <img src="fish-medium.png" class="medium-fish" alt="Medium fish">
+   <img src="fish-big.png" class="big-fish" alt="Big fish">
+</div>
+</section>
+
+</body>
+</html>
