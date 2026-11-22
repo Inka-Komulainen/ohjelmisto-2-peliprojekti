@@ -19,3 +19,46 @@ body {
     padding-top: 38rem;
     text-align: center;
 } /*sisäset marginit flexboxin elementeis vähän eh fixaa*/
+
+
+
+/*page2 css*/
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    width: 10rem;
+    padding: 1rem;
+    border: 0.15rem solid black;
+    background-color: #d39a52;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    background: url("visuals/game_beach.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+}
+
+.gamescreen {
+    display: flex;
+    background: url("visuals/game_lake.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+}

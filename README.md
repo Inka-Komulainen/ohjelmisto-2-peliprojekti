@@ -4,6 +4,10 @@ Yu Yu Khaing, Inka Komulainen, Phirasin Puisto, Eetu Sarviranta
 
 # Versiohistoria
 
+## 23.11.2026
+
+CSS-työstöä Khaingin tekemiin HTML-sivuihin. Placeholder taidetta myös viimeiselle kalalle ja pelikentälle.
+
 ## 22.11.2026
 
 Ajastin siirretty pääohjelma-tiedostoon. Aloitin koukun mekaniikkaa, jonka koodi on tällä hetkellä omissa tiedostoissaan. Koukku pystyy pyörimään tällä hetkellä, ja koukun voi pysäyttää sitä klikattaessa. Voi käydä testaamassa avaamalla inkatest.html. :DD -- Inka
