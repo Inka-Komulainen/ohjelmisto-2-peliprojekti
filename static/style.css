@@ -51,9 +51,14 @@ nav a {
     background-position: center;
     background-size: 100%;
     justify-content: center;
-    height: 10rem;
+    height: 8.1rem;
     align-items: center;
-    gap: 15%;
+    gap: 20%;
+}
+
+.midbox {
+    display: flex;
+    gap: 15%;    
 }
 
 .triangle-down {
@@ -74,4 +79,5 @@ nav a {
     background-position: center;
     background-size: 100%;
     justify-content: center;
+    height: 28rem;
 }
