@@ -13,6 +13,10 @@ body {
     background-size: cover;
 }
 
+html,body { 
+    height: 100%; /*fixes issues with background color not stretching to end of page*/
+}
+
 #formbody  {
     background-image: url("visuals/gofish_pic1.png");
 }
@@ -29,10 +33,15 @@ body {
 
 /*nav css*/
 
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
 }
 
 nav {
