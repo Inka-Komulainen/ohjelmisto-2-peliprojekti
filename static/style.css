@@ -27,7 +27,8 @@ body {
 
 
 
-/*page2 css*/
+/*nav css*/
+
 .logo {
     display: flex;
     justify-content: center;
@@ -47,6 +48,8 @@ nav a {
     background-color: #d39a52;
     text-align: center;
 }
+
+/*page 2 css*/
 
 .middle {
     display: flex;
