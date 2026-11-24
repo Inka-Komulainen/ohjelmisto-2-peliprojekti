@@ -109,8 +109,8 @@ nav a {
 }
 
 #mediumfish {
-  width: 113px;
-  height: 58px;
+  width: 165px;
+  height: 85px;
   position: absolute;
   background-image: url("/static/visuals/mediumfish1.png");
   background-position: center;
@@ -120,12 +120,42 @@ nav a {
 }
 
 #bigfish {
-  width: 113px;
-  height: 58px;
+  width: 348px;
+  height: 179px;
   position: absolute;
   background-image: url("/static/visuals/bigfish1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   top: 150px;
+}
+
+/*page 3 css*/
+
+.tools {
+  display: flex;
+}
+
+.item {
+  padding: 0.5rem;
+  border: 0.15rem solid rgb(1, 71, 83);
+  background-color: #7d898a;
+  text-align: center;
+  justify-content: center;
+}
+
+/*page 4 css*/
+
+.library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fish {
+  padding: 0.5rem;
+  border: 0.15rem solid rgb(1, 71, 83);
+  background-color: #7d898a;
+  text-align: center;
+  justify-content: center;
 }
