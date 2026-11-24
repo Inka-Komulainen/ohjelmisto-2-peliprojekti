@@ -97,4 +97,9 @@ nav a {
     background-size: 100%;
     justify-content: center;
     height: 28rem;
+    position: relative;
+}
+
+.small-fish {
+    position:absolute;
 }

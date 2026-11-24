@@ -1,0 +1,15 @@
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#myAnimation {
+  width: 113px;
+  height: 58px;
+  position: absolute;
+  background-image: url("visuals/smallfish1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
