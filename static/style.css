@@ -104,7 +104,7 @@ nav a {
   position: absolute;
   background-image: url("/static/visuals/smallfish1.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -114,7 +114,7 @@ nav a {
   position: absolute;
   background-image: url("/static/visuals/mediumfish1.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   top: 100px;
 }
@@ -125,7 +125,7 @@ nav a {
   position: absolute;
   background-image: url("/static/visuals/bigfish1.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   top: 150px;
 }
@@ -158,4 +158,11 @@ nav a {
   background-color: #7d898a;
   text-align: center;
   justify-content: center;
+  max-width: 90%;
+  display: flex;
+}
+
+.fish img {
+  max-width: 45%;
+  height: auto;
 }
