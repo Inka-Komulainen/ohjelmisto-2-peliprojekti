@@ -18,6 +18,7 @@ Mitä vielä puuttuu koukusta:
 - css tyyli ja visuaalit ei vielä ajantasalla
 - siiman palautuminen, kun se osuu peliruudun reunaan??
 - haavin toiminnon lisääminen 
+-- Inka
 
 ## 23.11.2026
 Added page2,3,4,5 html and pause html added. Page 2 is the main game screen page and the nav menu bar including in all pages except log in page(index.html). Page 3 include tools to upgrade and page 4 includes fish species and page 5 includes how to play(instructions). Pause page is supposed to create pop up message box with buttons. (YU YU KHAING)
