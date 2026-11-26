@@ -1,7 +1,7 @@
 
 function checkOverlap(hook) {
     const hookBorder = hook.getBoundingClientRect();
-    const fishBorder = fish.getBoundingClientRect();
+    const fishBorder = fish.getBoundingClientRect(); // check that this matches
 
     return !(hookBorder.top > fishBorder.bottom ||
     hookBorder.right < fishBorder.left ||
@@ -21,20 +21,20 @@ function hookCatch() {
     const reel = setInterval(function() {
         hook.style.height = reelLength +"px"; 
 
-        if (reelLength == 200){ // insert here condition when reel returns
-            touchBorder = true;
-        } 
-        if (reelLength < 4) { // when reel is back at starting position it starts the rotation again
+        if (reelLength <= 4) { // when reel is back at starting position it starts the rotation again
             clearInterval(reel);
             hook.classList.remove('test');
             hook.classList.add('reel');
             hookRotation();
         }
 
+        if (reelLength == 200){ // insert here at which point reel returns
+            touchBorder = true;
+        } 
         if (touchBorder == false) {
-            reelLength += 1;
+            reelLength += 1; // reeling speed adjust here
         } else {
-            reelLength -= 1;
+            reelLength -= 1; // reeling speed adjust here
         }
         
         let isOverlap = checkOverlap(hook); // checks if hook and fish elements are overlapping
@@ -51,7 +51,7 @@ function hookRotation() {
     let timesRight = 0;
     var rotator = setInterval(function(){
         let hook = document.getElementById('hook');
-        hook.style.transform = `rotate(${degree}deg)`; // hook element has to have its own style with 'transform: rotate(0deg);'
+        hook.style.transform = `rotate(${degree}deg)`; 
 
         //the hook can rotate right only once it has fully moved to the left and vice versa
         // in starting position (0deg) hook points straight down
@@ -69,17 +69,23 @@ function hookRotation() {
         }
         
     }, 1);
+
+    const hook = document.getElementById('lake'); //stops the rotation when gamescreen clicked
+    hook.addEventListener("click", (event)=>{
+        clearInterval(rotator);
+        hookCatch();
+    })
 }
 
 function startTimer(){
     let time = 30; // set time here
     const timer = setInterval(function(){
-        let display = document.getElementById('timer'); //make sure the id matches in final html
-        display.innerHTML= time + "s";
+        let timerDisplay = document.getElementById('timer'); //make sure the id matches in final html
+        timerDisplay.innerHTML= time + "s";
         time -= 1;
         if (time < 0) { // time over 
             clearInterval(timer);
-            display.innerHTML= "time over!"
+            timerDisplay.innerHTML= "time over!"
         }
     }, 1000);
 }
