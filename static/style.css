@@ -1,3 +1,5 @@
+/*generic, shared css*/
+
 body {
   margin: auto;
   width: 60%;
@@ -17,6 +19,12 @@ html,
 body {
   height: 100%; /*fixes issues with background color not stretching to end of page*/
 }
+
+h2 {
+  text-align: center;
+}
+
+/*index css*/
 
 #formbody {
   background-image: url("visuals/gofish_pic1.png");
@@ -165,4 +173,21 @@ nav a {
 .fish img {
   max-width: 45%;
   height: auto;
+}
+
+/*page 5 css*/
+
+.about {
+  display: flex;
+}
+
+.instructions {
+  padding: 0.5rem;
+  border: 0.15rem solid rgb(1, 71, 83);
+  background-color: #7d898a;
+  justify-content: center;
+}
+
+.instructions h3 {
+  text-align: center;
 }
