@@ -1,11 +1,12 @@
 'use strict';
 
+// hook code starts here
 function checkOverlap(hook) {
     const hookBorder = hook.getBoundingClientRect();
     const fishBorder = fish.getBoundingClientRect(); // check that this matches
 
     return !(hookBorder.top > fishBorder.bottom ||
-    hookBorder.bottom < fishBorder.ookBorder.right < fishBorder.left ||
+    hookBorder.bottom < fishBorder.hookBorder.right < fishBorder.left ||
     top ||
     hookBorder.left > fishBorder.right
     )
@@ -77,6 +78,7 @@ function hookRotation() {
         hookCatch();
     })
 }
+// hook code ends here
 
 function startTimer(){
     let time = 30; // set time here
