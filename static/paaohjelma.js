@@ -137,6 +137,13 @@ function myMove() {
   }
 }
 
+    function login(){
+    var agecheck = Number(document.getElementById("age").value);
+    if (agecheck >= 12) {
+    window.location.href="gofish_page2.html"
+    }
+}
+
 //this is only for test purposes. tie timer to game start when implementing :DD
 const button = document.getElementById('start');
 button.addEventListener("click", startTimer)
