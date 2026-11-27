@@ -153,8 +153,8 @@ background-color: #555;
 }
 
 #bigfish {
-  width: 348px;
-  height: 179px;
+  width: 287px;
+  height: 92px;
   position: absolute;
   background-image: url("/static/visuals/bigfish1.png");
   background-position: center;
