@@ -124,7 +124,10 @@ function myMove() {
 
   const fishselect = fishlist[getRandomInt(0, 3)];
 
-  var elem = document.getElementById(`${fishselect.id}`);
+  var elem = document.createElement('div');
+  elem.id = (`${fishselect.id}`);
+  var parent = document.getElementById('lake');
+  parent.appendChild(elem);
   elem.style.top = getRandomInt(0, `${fishselect.maxheight}`) + 'px';
   var pos = 0;
   clearInterval(id);
