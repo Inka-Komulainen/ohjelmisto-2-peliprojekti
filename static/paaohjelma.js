@@ -152,13 +152,85 @@ function myMove() {
   }
 }
 
-function login() {
-  var agecheck = Number(document.getElementById("age").value);
-  if (agecheck >= 12) {
-    window.location.href = "gofish_page2.html";
-  }
+    function login(){
+    var agecheck = Number(document.getElementById("age").value);
+    if (agecheck >= 12) {
+    window.location.href="gofish_page2.html"
+    }
+}
+
+var game_start = document.getElementById('start')
+
+function gamestart(){
+    myMove();
+    startTimer()
 }
 
 //this is only for test purposes. tie timer to game start when implementing :DD
-const button = document.getElementById("start");
-button.addEventListener("click", startTimer);
+const button = document.getElementById('start');
+button.addEventListener("click", startTimer)
+
+// Pause box functions
+let rotator = null;
+let isPaused = false;
+
+function pauseGame() {
+    if (isPaused) 
+        return;
+    isPaused = true;
+    // Stop fish and hook movement
+    clearInterval(id);
+    clearInterval(rotator);
+    game_save();
+    // Show pause menu
+    document.getElementById("pause").style.display = "block";
+}
+
+function resumeGame() {
+    if (!isPaused) 
+        return;
+    // Hide pause menu
+    document.getElementById("pause").style.display = "none";
+    // Change pause status
+    isPaused = false;
+    // Continue game
+    startGame();
+}
+
+function restartGame() {
+    // Stop current animations
+    clearInterval(id);
+    clearInterval(rotator);
+    // Reset game status
+    isPaused = false;
+    // Hide pause menu
+    document.getElementById("pause").style.display = "none";
+    // Remove previous saved game
+    localStorage.removeItem("GoFish");
+    // Start a new game
+    startGame();
+}
+
+function exitGame() {
+    let answer = confirm(
+        "Are you sure you want to exit the game?"
+    );
+    if (answer) {
+        game_save();
+        // Stop animations
+        clearInterval(id);
+        clearInterval(rotator);
+        isPaused = true;
+        // Return to login page
+        window.location.href = "index.html";
+    }
+}
+
+document.getElementById("pause_button").addEventListener(
+    "click", pauseGame);
+document.getElementById("resume_button").addEventListener(
+    "click", resumeGame);
+document.getElementById("restart_button").addEventListener(
+    "click", restartGame);
+document.getElementById("Exit").addEventListener(
+    "click", exitGame);
