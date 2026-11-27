@@ -96,6 +96,16 @@ nav a {
   transform: rotate(0deg);
 }
 
+.reel {
+position:absolute; 
+width: 4px;
+height: 4px;
+transform-origin: top center;
+border-radius: 4px;
+transform: rotate(0deg); 
+background-color: #555;
+}
+
 #lake {
   width: 1000px;
   height: 498px;
