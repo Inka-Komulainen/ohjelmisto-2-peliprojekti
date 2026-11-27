@@ -161,7 +161,6 @@ const button = document.getElementById('start');
 button.addEventListener("click", startTimer)
 
 // Pause box functions
-let id = null;
 let rotator = null;
 let isPaused = false;
 
