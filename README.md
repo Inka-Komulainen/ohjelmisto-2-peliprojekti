@@ -4,6 +4,10 @@ Yu Yu Khaing, Inka Komulainen, Phirasin Puisto, Eetu Sarviranta
 
 # Versiohistoria
 
+## 27.11.2026
+
+Kalat liikkuvat tilapäisesti pause nappia painamalla. Jokainen kalatyyppi oma olionsa eri ominaisuuksilla. (Eetu Sarviranta)
+
 ## 26.11.2026
 
 Koukun päätoiminnot ovat valmiit:

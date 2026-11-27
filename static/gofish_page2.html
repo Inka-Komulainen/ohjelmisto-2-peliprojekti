@@ -6,6 +6,7 @@
     <title>GO FISH GAME</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="visuals/favicon.ico" type="image/ico">
+    <script src="fish-code/fish-logic.js" defer></script>
   </head>
 
   <body>
@@ -28,7 +29,7 @@
     <section>
       <div id="pier">
         <div class="midbox">
-        <button type="button" id="pause_button">PAUSE</button>
+        <button type="button" id="pause_button" onclick="myMove()">PAUSE</button>
         <p>TargetPoints: <strong id="target">0</strong></p>
         <p>Points: <strong id="score">0</strong></p>
         </div>
