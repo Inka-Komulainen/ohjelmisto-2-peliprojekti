@@ -6,7 +6,7 @@ Yu Yu Khaing, Inka Komulainen, Phirasin Puisto, Eetu Sarviranta
 
 ## 27.11.2026
 
-Kalat liikkuvat tilapäisesti pause nappia painamalla. Jokainen kalatyyppi oma olionsa eri ominaisuuksilla. (Eetu Sarviranta)
+Kalat liikkuvat start funktiosta. Pystyvät liikkumaan vasemmalle ja oikealle. (Eetu Sarviranta)
 
 Added pause box javascript whcih refer to pasue.html with pop up box style (overlay) on the main game screen. In the pox box includes these functions-resume button, restart button and exit button which will end the game and lead to the log in page(index.html). YU YU KHAING
 

@@ -135,18 +135,36 @@ function myMove() {
   var parent = document.getElementById("lake");
   parent.appendChild(elem);
   elem.style.top = getRandomInt(0, `${fishselect.maxheight}`) + "px";
-  var pos = 0;
   const rightorleft = getRandomInt(0,2);
   
-
+  switch (rightorleft) {
+    case 0:
+      var pos = 0;
+      id = setInterval(moveright, `${fishselect.speed}`);
+      break
+    
+    case 1:
+      var pos = `${fishselect.finpos}`; //start from the very rightmost position
+      elem.style.transform = 'scaleX(-1)';
+      id = setInterval(moveleft, `${fishselect.speed}`);
+  }
   
-  id = setInterval(moveright, `${fishselect.speed}`); //fish speed, the lower number the faster
   function moveright() {
     if (pos == `${fishselect.finpos}`) {
-      //if fish position close enough to edge, reset to left. so the fish starts new loop
+      //if fish position close enough to edge, get rid of element
       parent.removeChild(elem);
+      
     } else {
       pos++;
+      elem.style.left = pos + "px";
+    }
+  }
+  function moveleft() {
+    if (pos == 0) {
+      parent.removeChild(elem);
+      
+    } else {
+      pos--;
       elem.style.left = pos + "px";
     }
   }

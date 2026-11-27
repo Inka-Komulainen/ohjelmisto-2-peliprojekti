@@ -50,12 +50,14 @@ h2 {
 .logo {
   display: flex;
   justify-content: center;
+  margin-top: 0.1rem;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
 }
 
 nav a {
