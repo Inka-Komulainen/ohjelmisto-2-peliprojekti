@@ -4,8 +4,8 @@ function checkOverlap(hook) {
     const fishBorder = fish.getBoundingClientRect(); // check that this matches
 
     return !(hookBorder.top > fishBorder.bottom ||
-    hookBorder.right < fishBorder.left ||
-    hookBorder.bottom < fishBorder.top ||
+    hookBorder.bottom < fishBorder.ookBorder.right < fishBorder.left ||
+    top ||
     hookBorder.left > fishBorder.right
     )
 }
@@ -13,7 +13,7 @@ function checkOverlap(hook) {
 function hookCatch() {
     let hook = document.getElementById('hook');
     hook.classList.remove('triangle-down'); // check that style matches
-    hook.classList.add('reel'); // check that style matches
+    hook.classList.add('reel'); 
     
     let reelLength = 4;
     let touchBorder = false;
@@ -23,8 +23,8 @@ function hookCatch() {
 
         if (reelLength <= 4) { // when reel is back at starting position it starts the rotation again
             clearInterval(reel);
-            hook.classList.remove('test');
-            hook.classList.add('reel');
+            hook.classList.remove('reel'); //check that style matches
+            hook.classList.add('triangle-down');
             hookRotation();
         }
 
